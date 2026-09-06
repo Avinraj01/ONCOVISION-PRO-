@@ -1,0 +1,23 @@
+{
+    "class_to_idx": {
+        "colon_aca": 0,
+        "colon_n": 1,
+        "lung_aca": 2,
+        "lung_bcca": 3,
+        "lung_n": 4
+    },
+    "idx_to_class": {
+        "0": "colon_aca",
+        "1": "colon_n",
+        "2": "lung_aca",
+        "3": "lung_bcca",
+        "4": "lung_n"
+    },
+    "classes": [
+        "colon_aca",
+        "colon_n",
+        "lung_aca",
+        "lung_bcca",
+        "lung_n"
+    ]
+}
