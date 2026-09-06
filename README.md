@@ -269,6 +269,7 @@ ONCOVISION-PRO/
 |-- app.py                                # Streamlit web application with 3D WebGL background engine
 |-- lung_colon_cancer_classification.ipynb # 25-section fully executed Jupyter research notebook
 |-- test_case_verification.ipynb          # Automated visual test suite & optical tile verification
+|-- Report.pdf                            # Academic clinical research report (PDF)
 |-- requirements.txt                      # Project dependency specification
 |-- TEST_CASE_RESULTS.md                  # Test suite verification documentation
 |-- README.md                             # Comprehensive project documentation and execution guide
