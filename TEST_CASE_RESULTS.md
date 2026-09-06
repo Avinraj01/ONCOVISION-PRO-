@@ -11,16 +11,16 @@
 
 | Test ID | Test Category | Target Input | Expected Class | Predicted Class | Confidence | Latency | Status |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **TC-01** | Malignant Colorectal | `colonca1.jpeg` (Preset Tile) | `colon_aca` | **`colon_aca`** | **99.98%** | 27.8 ms | ✅ **PASS** |
-| **TC-02** | Benign Colorectal | `colonn1.jpeg` (Preset Tile) | `colon_n` | **`colon_n`** | **99.94%** | 26.9 ms | ✅ **PASS** |
-| **TC-03** | Malignant Pulmonary (ACA) | `lungaca1.jpeg` (Preset Tile) | `lung_aca` | **`lung_aca`** | **99.89%** | 28.1 ms | ✅ **PASS** |
-| **TC-04** | Malignant Pulmonary (SCC) | `lungscc1.jpeg` (Preset Tile) | `lung_bcca` | **`lung_bcca`** | **99.92%** | 27.4 ms | ✅ **PASS** |
-| **TC-05** | Benign Pulmonary | `lungn1.jpeg` (Preset Tile) | `lung_n` | **`lung_n`** | **99.97%** | 26.5 ms | ✅ **PASS** |
-| **TC-06** | File Upload (JPG) | Custom upload (Colon Biopsy) | `colon_aca` | **`colon_aca`** | **99.95%** | 29.2 ms | ✅ **PASS** |
-| **TC-07** | File Upload (PNG) | Custom upload (Lung Alveoli) | `lung_n` | **`lung_n`** | **99.96%** | 28.0 ms | ✅ **PASS** |
-| **TC-08** | Edge Case: Non-Standard Dimension | High-Res Tile ($1024\times 1024$ px) | Resized to 224px | Correct Class | **>99.5%** | 31.0 ms | ✅ **PASS** |
-| **TC-09** | 3D WebGL Background Engine | Fullscreen Canvas Load | 3D DNA Helix | Rendered 60 FPS | N/A | ✅ **PASS** |
-| **TC-10** | Micro-Interaction Hover | Mouse move over page | Circular 3D Orbit | Smooth Damped Spin | N/A | ✅ **PASS** |
+| **TC-01** | Malignant Colorectal | `colonca1.jpeg` (Preset Tile) | `colon_aca` | **`colon_aca`** | **99.98%** | 27.8 ms | **[PASS]** |
+| **TC-02** | Benign Colorectal | `colonn1.jpeg` (Preset Tile) | `colon_n` | **`colon_n`** | **99.94%** | 26.9 ms | **[PASS]** |
+| **TC-03** | Malignant Pulmonary (ACA) | `lungaca1.jpeg` (Preset Tile) | `lung_aca` | **`lung_aca`** | **99.89%** | 28.1 ms | **[PASS]** |
+| **TC-04** | Malignant Pulmonary (SCC) | `lungscc1.jpeg` (Preset Tile) | `lung_bcca` | **`lung_bcca`** | **99.92%** | 27.4 ms | **[PASS]** |
+| **TC-05** | Benign Pulmonary | `lungn1.jpeg` (Preset Tile) | `lung_n` | **`lung_n`** | **99.97%** | 26.5 ms | **[PASS]** |
+| **TC-06** | File Upload (JPG) | Custom upload (Colon Biopsy) | `colon_aca` | **`colon_aca`** | **99.95%** | 29.2 ms | **[PASS]** |
+| **TC-07** | File Upload (PNG) | Custom upload (Lung Alveoli) | `lung_n` | **`lung_n`** | **99.96%** | 28.0 ms | **[PASS]** |
+| **TC-08** | Edge Case: Non-Standard Dimension | High-Res Tile ($1024\times 1024$ px) | Resized to 224px | Correct Class | **>99.5%** | 31.0 ms | **[PASS]** |
+| **TC-09** | 3D WebGL Background Engine | Fullscreen Canvas Load | 3D DNA Helix | Rendered 60 FPS | N/A | **[PASS]** |
+| **TC-10** | Micro-Interaction Hover | Mouse move over page | Circular 3D Orbit | Smooth Damped Spin | N/A | **[PASS]** |
 
 ---
 
