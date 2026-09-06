@@ -6,6 +6,7 @@
 **Target Diagnosis:** 5 Histopathological Classes (`colon_aca`, `colon_n`, `lung_aca`, `lung_bcca`, `lung_n`)  
 **Hardware Environment:** Apple Silicon M-Series (MPS Accelerated Metal Pipeline) and Multi-Core CPU Fallback  
 **Reference Benchmark:** LC25000 Histopathology Image Dataset  
+**Interactive Jupyter Verification Suite:** [`test_case_verification.ipynb`](file:///Users/avinraj/Desktop/calyx%20global%20assignment%20/test_case_verification.ipynb)  
 
 ---
 

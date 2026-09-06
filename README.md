@@ -11,8 +11,9 @@
 <br />
 
 <a href="https://oncovision-pro-ai.streamlit.app/"><img src="https://img.shields.io/badge/Live_Application-ONCOVISION_PRO-00f5d4?style=for-the-badge&logo=streamlit&logoColor=black" /></a>
-<a href="https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/RESEARCH_REPORT.md"><img src="https://img.shields.io/badge/Research_Report-Harvard_Style-009688?style=for-the-badge&logo=googledocs&logoColor=white" /></a>
-<a href="https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/TEST_CASE_RESULTS.md"><img src="https://img.shields.io/badge/Test_Suite-10_Passed-38A169?style=for-the-badge&logo=pytest&logoColor=white" /></a>
+<a href="https://docs.google.com/document/d/1w69DmQeJrIYb50oRZ68fPo8qW1xyxa847wJ0XaQcTBQ/edit?usp=sharing"><img src="https://img.shields.io/badge/Research_Report-Google_Docs-4285F4?style=for-the-badge&logo=googledocs&logoColor=white" /></a>
+<a href="https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/test_case_verification.ipynb"><img src="https://img.shields.io/badge/Test_Suite-Jupyter_Verification-009688?style=for-the-badge&logo=jupyter&logoColor=white" /></a>
+<a href="https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/TEST_CASE_RESULTS.md"><img src="https://img.shields.io/badge/Test_Docs-10_Cases_Passed-38A169?style=for-the-badge&logo=pytest&logoColor=white" /></a>
 <a href="https://github.com/Avinraj01/ONCOVISION-PRO-"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" /></a>
 
 <br /><br />
@@ -46,15 +47,15 @@ Histopathological evaluation of hematoxylin and eosin (H&E) stained tissue biops
 
 ```mermaid
 flowchart LR
-    A[Biopsy Specimen Ingestion] --> B{Manual Microscopy Challenges}
-    B -->|Inter-Observer Discordance| C[12-20% Subtyping Divergence]
-    B -->|High Pathology Workload| D[Turnaround Bottlenecks > 10 Days]
+    A["Biopsy Specimen Ingestion"] --> B{"Manual Microscopy Challenges"}
+    B -->|Inter-Observer Discordance| C["12-20% Subtyping Divergence"]
+    B -->|High Pathology Workload| D["Turnaround Bottlenecks > 10 Days"]
     
-    A --> E[ONCOVISION PRO AI Pipeline]
-    E --> F[1. High-Speed Optical Tile Ingestion]
-    F --> G[2. Deep Convolutional Feature Extraction]
-    G --> H[3. Subtyping & Malignancy Stratification]
-    H --> I[Verified Clinical Decision Support & Biomarkers]
+    A --> E["ONCOVISION PRO AI Pipeline"]
+    E --> F["1. High-Speed Optical Tile Ingestion"]
+    F --> G["2. Deep Convolutional Feature Extraction"]
+    G --> H["3. Subtyping & Malignancy Stratification"]
+    H --> I["Verified Clinical Decision Support & Biomarkers"]
 ```
 
 ### Challenge vs. ONCOVISION PRO Solution Matrix
@@ -106,25 +107,25 @@ mindmap
 ```mermaid
 flowchart LR
     subgraph INGESTION["1. Slide Ingestion Layer"]
-        IMG[Optical Biopsy Tile (768x768)] --> RES[Bilinear Standardization (224x224)]
-        RES --> NORM[ImageNet Normalization (Mean/Std)]
+        IMG["Optical Biopsy Tile (768x768)"] --> RES["Bilinear Standardization (224x224)"]
+        RES --> NORM["ImageNet Normalization (Mean/Std)"]
     end
 
     subgraph INFERENCE["2. Neural Inference Engine"]
-        NORM --> CNN[Custom 4-Stage CNN / EfficientNet-B0]
-        CNN --> LOGITS[Logits Tensor (5 Classes)]
-        LOGITS --> SOFTMAX[Calibrated Softmax Probabilities]
+        NORM --> CNN["Custom 4-Stage CNN / EfficientNet-B0"]
+        CNN --> LOGITS["Logits Tensor (5 Classes)"]
+        LOGITS --> SOFTMAX["Calibrated Softmax Probabilities"]
     end
 
     subgraph TELEMETRY["3. Clinical Oncology Telemetry"]
-        SOFTMAX --> CLASS[Top-1 Subtype Assignment]
-        CLASS --> RISK[Invasion Risk Stratification]
-        CLASS --> BIO[Reflex Molecular Biomarker Engine]
+        SOFTMAX --> CLASS["Top-1 Subtype Assignment"]
+        CLASS --> RISK["Invasion Risk Stratification"]
+        CLASS --> BIO["Reflex Molecular Biomarker Engine"]
     end
 
     subgraph VISUALIZATION["4. Interactive WebGL Console"]
-        BIO --> DASH[Streamlit Medical UI]
-        DASH --> THREE[3D DNA Double Helix Background]
+        BIO --> DASH["Streamlit Medical UI"]
+        DASH --> THREE["3D DNA Double Helix Background"]
     end
 ```
 
@@ -150,7 +151,7 @@ flowchart LR
 
 <br /><br />
 
-**[Launch Live ONCOVISION PRO Console](https://oncovision-pro-ai.streamlit.app/)** &nbsp;&nbsp;·&nbsp;&nbsp; **[View Academic Research Report](https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/RESEARCH_REPORT.md)**
+**[Launch Live ONCOVISION PRO Console](https://oncovision-pro-ai.streamlit.app/)** &nbsp;&nbsp;·&nbsp;&nbsp; **[View Research Report (Google Docs)](https://docs.google.com/document/d/1w69DmQeJrIYb50oRZ68fPo8qW1xyxa847wJ0XaQcTBQ/edit?usp=sharing)** &nbsp;&nbsp;·&nbsp;&nbsp; **[View Jupyter Test Suite](https://github.com/Avinraj01/ONCOVISION-PRO-/blob/main/test_case_verification.ipynb)**
 
 <sub>Click the preview image to interact with the live 3D WebGL medical decision support platform on Streamlit Cloud.</sub>
 
@@ -220,7 +221,7 @@ $$\Large \text{Macro F1} = \frac{1}{N} \sum_{i=1}^N \frac{2 \cdot \text{Precisio
 <br />
 
 | Test ID | Category | Target Input | Expected Subtype | Predicted Subtype | Confidence | Latency | Status |
-|:---:|:---|:---|:---:|:---:|:---:|:---:|:---:|
+|:---|:---|:---|:---:|:---:|:---:|:---:|:---:|
 | `TC-01` | Malignant Colorectal | `colonca1.jpeg` | `colon_aca` | `colon_aca` | **99.98%** | 27.8 ms | <img src="https://img.shields.io/badge/PASS-38A169?style=flat-square" /> |
 | `TC-02` | Benign Colorectal | `colonn1.jpeg` | `colon_n` | `colon_n` | **99.94%** | 26.9 ms | <img src="https://img.shields.io/badge/PASS-38A169?style=flat-square" /> |
 | `TC-03` | Malignant Pulmonary (ACA) | `lungaca1.jpeg` | `lung_aca` | `lung_aca` | **99.89%** | 28.1 ms | <img src="https://img.shields.io/badge/PASS-38A169?style=flat-square" /> |
@@ -267,9 +268,9 @@ $$\Large \text{Macro F1} = \frac{1}{N} \sum_{i=1}^N \frac{2 \cdot \text{Precisio
 ONCOVISION-PRO/
 |-- app.py                                # Streamlit web application with 3D WebGL background engine
 |-- lung_colon_cancer_classification.ipynb # 25-section fully executed Jupyter research notebook
+|-- test_case_verification.ipynb          # Automated visual test suite & optical tile verification
 |-- requirements.txt                      # Project dependency specification
-|-- RESEARCH_REPORT.md                    # Academic research report (Harvard referencing style)
-|-- TEST_CASE_RESULTS.md                  # Test suite verification across all classes and edge cases
+|-- TEST_CASE_RESULTS.md                  # Test suite verification documentation
 |-- README.md                             # Comprehensive project documentation and execution guide
 |-- .gitignore                            # Standard Git ignore rules
 |-- artifacts/                            # Exported trained models and metadata
